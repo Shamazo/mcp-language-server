@@ -151,7 +151,10 @@ jobs:
           sudo apt-get install -y clang-16 llvm-16 clangd-16 bear
 
       - name: Verify Clangd Installation
-        run: clangd-16 --version
+        run: |
+          sudo ln -s /usr/bin/clangd-16 /usr/bin/clangd
+          clangd-16 --version
+          clangd --version
       
       - name: Create compile commands
         run: |
