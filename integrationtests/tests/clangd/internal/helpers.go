@@ -11,7 +11,7 @@ import (
 // GetTestSuite returns a test suite for Clangd language server tests
 func GetTestSuite(t *testing.T) *common.TestSuite {
 	// Configure Clangd LSP
-	repoRoot, err := filepath.Abs("/Users/hamish/projects/opensource/mcp-language-server")
+	repoRoot, err := filepath.Abs("../../../..")
 	if err != nil {
 		t.Fatalf("Failed to get repo root: %v", err)
 	}
