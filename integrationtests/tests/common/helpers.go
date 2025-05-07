@@ -107,6 +107,14 @@ func normalizePaths(_ *testing.T, input string) string {
 				lines[i] = "/TEST_OUTPUT/workspace/" + parts[1]
 			}
 		}
+		if strings.Contains(line, "/workspaces/") {
+			// Extract everything after /workspace/
+			parts := strings.Split(line, "/workspaces/")
+			if len(parts) > 1 {
+				// Replace with a simple placeholder path
+				lines[i] = "/TEST_OUTPUT/workspace/" + parts[1]
+			}
+		}
 	}
 
 	return strings.Join(lines, "\n")

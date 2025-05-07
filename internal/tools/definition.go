@@ -65,6 +65,11 @@ func ReadDefinition(ctx context.Context, client *lsp.Client, symbolName string) 
 		loc := symbol.GetLocation()
 
 		banner := "---\n\n"
+		// Open the file if not already open
+		err := client.OpenFile(ctx, loc.URI.Path())
+		if err != nil {
+			return "", fmt.Errorf("could not open file: %v", err)
+		}
 		definition, loc, err := GetFullDefinition(ctx, client, loc)
 		locationInfo := fmt.Sprintf(
 			"Symbol: %s\n"+

@@ -1,4 +1,5 @@
 #include <iostream>
+#include "helper.hpp"
 
 // FooBar is a simple function for testing
 void foo_bar() {
@@ -7,6 +8,7 @@ void foo_bar() {
 }
 
 int main() {
+  helperFunction();
   return 0;
 
   // Intentional error: unreachable code

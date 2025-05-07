@@ -1,5 +1,7 @@
 package diagnostics_test
 
+// note: clangd doesn't support pull diagnostics (textdocument/diagnostic)
+// see: https://github.com/clangd/clangd/issues/2108
 import (
 	"context"
 	"path/filepath"
