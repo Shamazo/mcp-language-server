@@ -1,0 +1,10 @@
+---
+
+Symbol: foo_bar
+/TEST_OUTPUT/workspace/src/main.cpp
+Range: L4:C1 - L7:C2
+
+4|void foo_bar() {
+5|  std::cout << "Hello, World!" << std::endl;
+6|  return;
+7|}

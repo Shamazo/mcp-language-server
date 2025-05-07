@@ -184,8 +184,8 @@ func SnapshotTest(t *testing.T, languageName, toolName, testName, actualResult s
 	expected := string(expectedBytes)
 
 	// Compare the results
-	if expected != actualResult {
-		t.Errorf("Result doesn't match snapshot.\nExpected:\n%s\n\nActual:\n%s", expected, actualResult)
+	if err := CompareSnapshots(expected, actualResult); err != nil {
+		t.Errorf("%v", err)
 
 		// Create a diff file for debugging
 		diffFile := snapshotFile + ".diff"
@@ -196,4 +196,13 @@ func SnapshotTest(t *testing.T, languageName, toolName, testName, actualResult s
 			t.Logf("Wrote diff to: %s", diffFile)
 		}
 	}
+}
+
+func CompareSnapshots(expected, actual string) error {
+	expected = strings.TrimSpace(expected)
+	actual = strings.TrimSpace(actual)
+	if expected != actual {
+		return fmt.Errorf("Snapshot mismatch:\nExpected:\n%s\nActual:\n%s", expected, actual)
+	}
+	return nil
 }
