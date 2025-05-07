@@ -81,6 +81,7 @@ type BaseSymbolInformation struct {
 	// if necessary). It can't be used to re-infer a hierarchy for the document
 	// symbols.
 	ContainerName string `json:"containerName,omitempty"`
+	Score float64 `json:"score,omitempty"`
 }
 
 // @since 3.16.0

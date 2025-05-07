@@ -83,6 +83,7 @@ func (t *Or_ClientSemanticTokensRequestOptions_full) UnmarshalJSON(x []byte) err
 		return nil
 	}
 	decoder221 := json.NewDecoder(bytes.NewReader(x))
+	decoder221.DisallowUnknownFields()
 	var h221 ClientSemanticTokensRequestFullDelta
 	if err := decoder221.Decode(&h221); err == nil {
 		t.Value = h221
@@ -116,6 +117,7 @@ func (t *Or_ClientSemanticTokensRequestOptions_range) UnmarshalJSON(x []byte) er
 		return nil
 	}
 	decoder218 := json.NewDecoder(bytes.NewReader(x))
+	decoder218.DisallowUnknownFields()
 	var h218 Lit_ClientSemanticTokensRequestOptions_range_Item1
 	if err := decoder218.Decode(&h218); err == nil {
 		t.Value = h218
@@ -142,12 +144,14 @@ func (t *Or_CompletionItemDefaults_editRange) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder183 := json.NewDecoder(bytes.NewReader(x))
+	decoder183.DisallowUnknownFields()
 	var h183 EditRangeWithInsertReplace
 	if err := decoder183.Decode(&h183); err == nil {
 		t.Value = h183
 		return nil
 	}
 	decoder184 := json.NewDecoder(bytes.NewReader(x))
+	decoder184.DisallowUnknownFields()
 	var h184 Range
 	if err := decoder184.Decode(&h184); err == nil {
 		t.Value = h184
@@ -181,6 +185,7 @@ func (t *Or_CompletionItem_documentation) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder26 := json.NewDecoder(bytes.NewReader(x))
+	decoder26.DisallowUnknownFields()
 	var h26 MarkupContent
 	if err := decoder26.Decode(&h26); err == nil {
 		t.Value = h26
@@ -207,12 +212,14 @@ func (t *Or_CompletionItem_textEdit) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder29 := json.NewDecoder(bytes.NewReader(x))
+	decoder29.DisallowUnknownFields()
 	var h29 InsertReplaceEdit
 	if err := decoder29.Decode(&h29); err == nil {
 		t.Value = h29
 		return nil
 	}
 	decoder30 := json.NewDecoder(bytes.NewReader(x))
+	decoder30.DisallowUnknownFields()
 	var h30 TextEdit
 	if err := decoder30.Decode(&h30); err == nil {
 		t.Value = h30
@@ -239,12 +246,14 @@ func (t *Or_Declaration) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder237 := json.NewDecoder(bytes.NewReader(x))
+	decoder237.DisallowUnknownFields()
 	var h237 Location
 	if err := decoder237.Decode(&h237); err == nil {
 		t.Value = h237
 		return nil
 	}
 	decoder238 := json.NewDecoder(bytes.NewReader(x))
+	decoder238.DisallowUnknownFields()
 	var h238 []Location
 	if err := decoder238.Decode(&h238); err == nil {
 		t.Value = h238
@@ -271,12 +280,14 @@ func (t *Or_Definition) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder224 := json.NewDecoder(bytes.NewReader(x))
+	decoder224.DisallowUnknownFields()
 	var h224 Location
 	if err := decoder224.Decode(&h224); err == nil {
 		t.Value = h224
 		return nil
 	}
 	decoder225 := json.NewDecoder(bytes.NewReader(x))
+	decoder225.DisallowUnknownFields()
 	var h225 []Location
 	if err := decoder225.Decode(&h225); err == nil {
 		t.Value = h225
@@ -344,6 +355,7 @@ func (t *Or_DidChangeConfigurationRegistrationOptions_section) UnmarshalJSON(x [
 		return nil
 	}
 	decoder23 := json.NewDecoder(bytes.NewReader(x))
+	decoder23.DisallowUnknownFields()
 	var h23 []string
 	if err := decoder23.Decode(&h23); err == nil {
 		t.Value = h23
@@ -370,12 +382,14 @@ func (t *Or_DocumentDiagnosticReport) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder247 := json.NewDecoder(bytes.NewReader(x))
+	decoder247.DisallowUnknownFields()
 	var h247 RelatedFullDocumentDiagnosticReport
 	if err := decoder247.Decode(&h247); err == nil {
 		t.Value = h247
 		return nil
 	}
 	decoder248 := json.NewDecoder(bytes.NewReader(x))
+	decoder248.DisallowUnknownFields()
 	var h248 RelatedUnchangedDocumentDiagnosticReport
 	if err := decoder248.Decode(&h248); err == nil {
 		t.Value = h248
@@ -402,12 +416,14 @@ func (t *Or_DocumentDiagnosticReportPartialResult_relatedDocuments_Value) Unmars
 		return nil
 	}
 	decoder16 := json.NewDecoder(bytes.NewReader(x))
+	decoder16.DisallowUnknownFields()
 	var h16 FullDocumentDiagnosticReport
 	if err := decoder16.Decode(&h16); err == nil {
 		t.Value = h16
 		return nil
 	}
 	decoder17 := json.NewDecoder(bytes.NewReader(x))
+	decoder17.DisallowUnknownFields()
 	var h17 UnchangedDocumentDiagnosticReport
 	if err := decoder17.Decode(&h17); err == nil {
 		t.Value = h17
@@ -434,12 +450,14 @@ func (t *Or_DocumentFilter) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder270 := json.NewDecoder(bytes.NewReader(x))
+	decoder270.DisallowUnknownFields()
 	var h270 NotebookCellTextDocumentFilter
 	if err := decoder270.Decode(&h270); err == nil {
 		t.Value = h270
 		return nil
 	}
 	decoder271 := json.NewDecoder(bytes.NewReader(x))
+	decoder271.DisallowUnknownFields()
 	var h271 TextDocumentFilter
 	if err := decoder271.Decode(&h271); err == nil {
 		t.Value = h271
@@ -466,12 +484,14 @@ func (t *Or_GlobPattern) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder274 := json.NewDecoder(bytes.NewReader(x))
+	decoder274.DisallowUnknownFields()
 	var h274 Pattern
 	if err := decoder274.Decode(&h274); err == nil {
 		t.Value = h274
 		return nil
 	}
 	decoder275 := json.NewDecoder(bytes.NewReader(x))
+	decoder275.DisallowUnknownFields()
 	var h275 RelativePattern
 	if err := decoder275.Decode(&h275); err == nil {
 		t.Value = h275
@@ -500,18 +520,21 @@ func (t *Or_Hover_contents) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder34 := json.NewDecoder(bytes.NewReader(x))
+	decoder34.DisallowUnknownFields()
 	var h34 MarkedString
 	if err := decoder34.Decode(&h34); err == nil {
 		t.Value = h34
 		return nil
 	}
 	decoder35 := json.NewDecoder(bytes.NewReader(x))
+	decoder35.DisallowUnknownFields()
 	var h35 MarkupContent
 	if err := decoder35.Decode(&h35); err == nil {
 		t.Value = h35
 		return nil
 	}
 	decoder36 := json.NewDecoder(bytes.NewReader(x))
+	decoder36.DisallowUnknownFields()
 	var h36 []MarkedString
 	if err := decoder36.Decode(&h36); err == nil {
 		t.Value = h36
@@ -545,6 +568,7 @@ func (t *Or_InlayHintLabelPart_tooltip) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder57 := json.NewDecoder(bytes.NewReader(x))
+	decoder57.DisallowUnknownFields()
 	var h57 MarkupContent
 	if err := decoder57.Decode(&h57); err == nil {
 		t.Value = h57
@@ -578,6 +602,7 @@ func (t *Or_InlayHint_label) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder10 := json.NewDecoder(bytes.NewReader(x))
+	decoder10.DisallowUnknownFields()
 	var h10 []InlayHintLabelPart
 	if err := decoder10.Decode(&h10); err == nil {
 		t.Value = h10
@@ -611,6 +636,7 @@ func (t *Or_InlayHint_tooltip) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder13 := json.NewDecoder(bytes.NewReader(x))
+	decoder13.DisallowUnknownFields()
 	var h13 MarkupContent
 	if err := decoder13.Decode(&h13); err == nil {
 		t.Value = h13
@@ -644,6 +670,7 @@ func (t *Or_InlineCompletionItem_insertText) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder20 := json.NewDecoder(bytes.NewReader(x))
+	decoder20.DisallowUnknownFields()
 	var h20 StringValue
 	if err := decoder20.Decode(&h20); err == nil {
 		t.Value = h20
@@ -672,18 +699,21 @@ func (t *Or_InlineValue) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder242 := json.NewDecoder(bytes.NewReader(x))
+	decoder242.DisallowUnknownFields()
 	var h242 InlineValueEvaluatableExpression
 	if err := decoder242.Decode(&h242); err == nil {
 		t.Value = h242
 		return nil
 	}
 	decoder243 := json.NewDecoder(bytes.NewReader(x))
+	decoder243.DisallowUnknownFields()
 	var h243 InlineValueText
 	if err := decoder243.Decode(&h243); err == nil {
 		t.Value = h243
 		return nil
 	}
 	decoder244 := json.NewDecoder(bytes.NewReader(x))
+	decoder244.DisallowUnknownFields()
 	var h244 InlineValueVariableLookup
 	if err := decoder244.Decode(&h244); err == nil {
 		t.Value = h244
@@ -755,12 +785,14 @@ func (t *Or_LSPAny) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder233 := json.NewDecoder(bytes.NewReader(x))
+	decoder233.DisallowUnknownFields()
 	var h233 LSPArray
 	if err := decoder233.Decode(&h233); err == nil {
 		t.Value = h233
 		return nil
 	}
 	decoder234 := json.NewDecoder(bytes.NewReader(x))
+	decoder234.DisallowUnknownFields()
 	var h234 LSPObject
 	if err := decoder234.Decode(&h234); err == nil {
 		t.Value = h234
@@ -794,6 +826,7 @@ func (t *Or_MarkedString) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder267 := json.NewDecoder(bytes.NewReader(x))
+	decoder267.DisallowUnknownFields()
 	var h267 MarkedStringWithLanguage
 	if err := decoder267.Decode(&h267); err == nil {
 		t.Value = h267
@@ -827,6 +860,7 @@ func (t *Or_NotebookCellTextDocumentFilter_notebook) UnmarshalJSON(x []byte) err
 		return nil
 	}
 	decoder209 := json.NewDecoder(bytes.NewReader(x))
+	decoder209.DisallowUnknownFields()
 	var h209 NotebookDocumentFilter
 	if err := decoder209.Decode(&h209); err == nil {
 		t.Value = h209
@@ -855,18 +889,21 @@ func (t *Or_NotebookDocumentFilter) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder285 := json.NewDecoder(bytes.NewReader(x))
+	decoder285.DisallowUnknownFields()
 	var h285 NotebookDocumentFilterNotebookType
 	if err := decoder285.Decode(&h285); err == nil {
 		t.Value = h285
 		return nil
 	}
 	decoder286 := json.NewDecoder(bytes.NewReader(x))
+	decoder286.DisallowUnknownFields()
 	var h286 NotebookDocumentFilterPattern
 	if err := decoder286.Decode(&h286); err == nil {
 		t.Value = h286
 		return nil
 	}
 	decoder287 := json.NewDecoder(bytes.NewReader(x))
+	decoder287.DisallowUnknownFields()
 	var h287 NotebookDocumentFilterScheme
 	if err := decoder287.Decode(&h287); err == nil {
 		t.Value = h287
@@ -900,6 +937,7 @@ func (t *Or_NotebookDocumentFilterWithCells_notebook) UnmarshalJSON(x []byte) er
 		return nil
 	}
 	decoder193 := json.NewDecoder(bytes.NewReader(x))
+	decoder193.DisallowUnknownFields()
 	var h193 NotebookDocumentFilter
 	if err := decoder193.Decode(&h193); err == nil {
 		t.Value = h193
@@ -933,6 +971,7 @@ func (t *Or_NotebookDocumentFilterWithNotebook_notebook) UnmarshalJSON(x []byte)
 		return nil
 	}
 	decoder190 := json.NewDecoder(bytes.NewReader(x))
+	decoder190.DisallowUnknownFields()
 	var h190 NotebookDocumentFilter
 	if err := decoder190.Decode(&h190); err == nil {
 		t.Value = h190
@@ -959,12 +998,14 @@ func (t *Or_NotebookDocumentSyncOptions_notebookSelector_Elem) UnmarshalJSON(x [
 		return nil
 	}
 	decoder68 := json.NewDecoder(bytes.NewReader(x))
+	decoder68.DisallowUnknownFields()
 	var h68 NotebookDocumentFilterWithCells
 	if err := decoder68.Decode(&h68); err == nil {
 		t.Value = h68
 		return nil
 	}
 	decoder69 := json.NewDecoder(bytes.NewReader(x))
+	decoder69.DisallowUnknownFields()
 	var h69 NotebookDocumentFilterWithNotebook
 	if err := decoder69.Decode(&h69); err == nil {
 		t.Value = h69
@@ -998,6 +1039,7 @@ func (t *Or_ParameterInformation_documentation) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder206 := json.NewDecoder(bytes.NewReader(x))
+	decoder206.DisallowUnknownFields()
 	var h206 MarkupContent
 	if err := decoder206.Decode(&h206); err == nil {
 		t.Value = h206
@@ -1031,6 +1073,7 @@ func (t *Or_ParameterInformation_label) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder203 := json.NewDecoder(bytes.NewReader(x))
+	decoder203.DisallowUnknownFields()
 	var h203 Tuple_ParameterInformation_label_Item1
 	if err := decoder203.Decode(&h203); err == nil {
 		t.Value = h203
@@ -1059,18 +1102,21 @@ func (t *Or_PrepareRenameResult) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder252 := json.NewDecoder(bytes.NewReader(x))
+	decoder252.DisallowUnknownFields()
 	var h252 PrepareRenameDefaultBehavior
 	if err := decoder252.Decode(&h252); err == nil {
 		t.Value = h252
 		return nil
 	}
 	decoder253 := json.NewDecoder(bytes.NewReader(x))
+	decoder253.DisallowUnknownFields()
 	var h253 PrepareRenamePlaceholder
 	if err := decoder253.Decode(&h253); err == nil {
 		t.Value = h253
 		return nil
 	}
 	decoder254 := json.NewDecoder(bytes.NewReader(x))
+	decoder254.DisallowUnknownFields()
 	var h254 Range
 	if err := decoder254.Decode(&h254); err == nil {
 		t.Value = h254
@@ -1131,12 +1177,14 @@ func (t *Or_RelatedFullDocumentDiagnosticReport_relatedDocuments_Value) Unmarsha
 		return nil
 	}
 	decoder60 := json.NewDecoder(bytes.NewReader(x))
+	decoder60.DisallowUnknownFields()
 	var h60 FullDocumentDiagnosticReport
 	if err := decoder60.Decode(&h60); err == nil {
 		t.Value = h60
 		return nil
 	}
 	decoder61 := json.NewDecoder(bytes.NewReader(x))
+	decoder61.DisallowUnknownFields()
 	var h61 UnchangedDocumentDiagnosticReport
 	if err := decoder61.Decode(&h61); err == nil {
 		t.Value = h61
@@ -1163,12 +1211,14 @@ func (t *Or_RelatedUnchangedDocumentDiagnosticReport_relatedDocuments_Value) Unm
 		return nil
 	}
 	decoder64 := json.NewDecoder(bytes.NewReader(x))
+	decoder64.DisallowUnknownFields()
 	var h64 FullDocumentDiagnosticReport
 	if err := decoder64.Decode(&h64); err == nil {
 		t.Value = h64
 		return nil
 	}
 	decoder65 := json.NewDecoder(bytes.NewReader(x))
+	decoder65.DisallowUnknownFields()
 	var h65 UnchangedDocumentDiagnosticReport
 	if err := decoder65.Decode(&h65); err == nil {
 		t.Value = h65
@@ -1195,12 +1245,14 @@ func (t *Or_RelativePattern_baseUri) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder214 := json.NewDecoder(bytes.NewReader(x))
+	decoder214.DisallowUnknownFields()
 	var h214 URI
 	if err := decoder214.Decode(&h214); err == nil {
 		t.Value = h214
 		return nil
 	}
 	decoder215 := json.NewDecoder(bytes.NewReader(x))
+	decoder215.DisallowUnknownFields()
 	var h215 WorkspaceFolder
 	if err := decoder215.Decode(&h215); err == nil {
 		t.Value = h215
@@ -1227,12 +1279,14 @@ func (t *Or_Result_textDocument_codeAction_Item0_Elem) UnmarshalJSON(x []byte) e
 		return nil
 	}
 	decoder322 := json.NewDecoder(bytes.NewReader(x))
+	decoder322.DisallowUnknownFields()
 	var h322 CodeAction
 	if err := decoder322.Decode(&h322); err == nil {
 		t.Value = h322
 		return nil
 	}
 	decoder323 := json.NewDecoder(bytes.NewReader(x))
+	decoder323.DisallowUnknownFields()
 	var h323 Command
 	if err := decoder323.Decode(&h323); err == nil {
 		t.Value = h323
@@ -1259,12 +1313,14 @@ func (t *Or_Result_textDocument_completion) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder310 := json.NewDecoder(bytes.NewReader(x))
+	decoder310.DisallowUnknownFields()
 	var h310 CompletionList
 	if err := decoder310.Decode(&h310); err == nil {
 		t.Value = h310
 		return nil
 	}
 	decoder311 := json.NewDecoder(bytes.NewReader(x))
+	decoder311.DisallowUnknownFields()
 	var h311 []CompletionItem
 	if err := decoder311.Decode(&h311); err == nil {
 		t.Value = h311
@@ -1291,12 +1347,14 @@ func (t *Or_Result_textDocument_declaration) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder298 := json.NewDecoder(bytes.NewReader(x))
+	decoder298.DisallowUnknownFields()
 	var h298 Declaration
 	if err := decoder298.Decode(&h298); err == nil {
 		t.Value = h298
 		return nil
 	}
 	decoder299 := json.NewDecoder(bytes.NewReader(x))
+	decoder299.DisallowUnknownFields()
 	var h299 []DeclarationLink
 	if err := decoder299.Decode(&h299); err == nil {
 		t.Value = h299
@@ -1323,12 +1381,14 @@ func (t *Or_Result_textDocument_definition) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder314 := json.NewDecoder(bytes.NewReader(x))
+	decoder314.DisallowUnknownFields()
 	var h314 Definition
 	if err := decoder314.Decode(&h314); err == nil {
 		t.Value = h314
 		return nil
 	}
 	decoder315 := json.NewDecoder(bytes.NewReader(x))
+	decoder315.DisallowUnknownFields()
 	var h315 []DefinitionLink
 	if err := decoder315.Decode(&h315); err == nil {
 		t.Value = h315
@@ -1355,12 +1415,14 @@ func (t *Or_Result_textDocument_documentSymbol) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder318 := json.NewDecoder(bytes.NewReader(x))
+	decoder318.DisallowUnknownFields()
 	var h318 []DocumentSymbol
 	if err := decoder318.Decode(&h318); err == nil {
 		t.Value = h318
 		return nil
 	}
 	decoder319 := json.NewDecoder(bytes.NewReader(x))
+	decoder319.DisallowUnknownFields()
 	var h319 []SymbolInformation
 	if err := decoder319.Decode(&h319); err == nil {
 		t.Value = h319
@@ -1387,12 +1449,14 @@ func (t *Or_Result_textDocument_implementation) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder290 := json.NewDecoder(bytes.NewReader(x))
+	decoder290.DisallowUnknownFields()
 	var h290 Definition
 	if err := decoder290.Decode(&h290); err == nil {
 		t.Value = h290
 		return nil
 	}
 	decoder291 := json.NewDecoder(bytes.NewReader(x))
+	decoder291.DisallowUnknownFields()
 	var h291 []DefinitionLink
 	if err := decoder291.Decode(&h291); err == nil {
 		t.Value = h291
@@ -1419,12 +1483,14 @@ func (t *Or_Result_textDocument_inlineCompletion) UnmarshalJSON(x []byte) error 
 		return nil
 	}
 	decoder306 := json.NewDecoder(bytes.NewReader(x))
+	decoder306.DisallowUnknownFields()
 	var h306 InlineCompletionList
 	if err := decoder306.Decode(&h306); err == nil {
 		t.Value = h306
 		return nil
 	}
 	decoder307 := json.NewDecoder(bytes.NewReader(x))
+	decoder307.DisallowUnknownFields()
 	var h307 []InlineCompletionItem
 	if err := decoder307.Decode(&h307); err == nil {
 		t.Value = h307
@@ -1451,12 +1517,14 @@ func (t *Or_Result_textDocument_semanticTokens_full_delta) UnmarshalJSON(x []byt
 		return nil
 	}
 	decoder302 := json.NewDecoder(bytes.NewReader(x))
+	decoder302.DisallowUnknownFields()
 	var h302 SemanticTokens
 	if err := decoder302.Decode(&h302); err == nil {
 		t.Value = h302
 		return nil
 	}
 	decoder303 := json.NewDecoder(bytes.NewReader(x))
+	decoder303.DisallowUnknownFields()
 	var h303 SemanticTokensDelta
 	if err := decoder303.Decode(&h303); err == nil {
 		t.Value = h303
@@ -1483,12 +1551,14 @@ func (t *Or_Result_textDocument_typeDefinition) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder294 := json.NewDecoder(bytes.NewReader(x))
+	decoder294.DisallowUnknownFields()
 	var h294 Definition
 	if err := decoder294.Decode(&h294); err == nil {
 		t.Value = h294
 		return nil
 	}
 	decoder295 := json.NewDecoder(bytes.NewReader(x))
+	decoder295.DisallowUnknownFields()
 	var h295 []DefinitionLink
 	if err := decoder295.Decode(&h295); err == nil {
 		t.Value = h295
@@ -1515,12 +1585,14 @@ func (t *Or_Result_workspace_symbol) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder326 := json.NewDecoder(bytes.NewReader(x))
+	decoder326.DisallowUnknownFields()
 	var h326 []SymbolInformation
 	if err := decoder326.Decode(&h326); err == nil {
 		t.Value = h326
 		return nil
 	}
 	decoder327 := json.NewDecoder(bytes.NewReader(x))
+	decoder327.DisallowUnknownFields()
 	var h327 []WorkspaceSymbol
 	if err := decoder327.Decode(&h327); err == nil {
 		t.Value = h327
@@ -1554,6 +1626,7 @@ func (t *Or_SemanticTokensOptions_full) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder48 := json.NewDecoder(bytes.NewReader(x))
+	decoder48.DisallowUnknownFields()
 	var h48 SemanticTokensFullDelta
 	if err := decoder48.Decode(&h48); err == nil {
 		t.Value = h48
@@ -1587,6 +1660,7 @@ func (t *Or_SemanticTokensOptions_range) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder45 := json.NewDecoder(bytes.NewReader(x))
+	decoder45.DisallowUnknownFields()
 	var h45 Lit_SemanticTokensOptions_range_Item1
 	if err := decoder45.Decode(&h45); err == nil {
 		t.Value = h45
@@ -1622,12 +1696,14 @@ func (t *Or_ServerCapabilities_callHierarchyProvider) UnmarshalJSON(x []byte) er
 		return nil
 	}
 	decoder141 := json.NewDecoder(bytes.NewReader(x))
+	decoder141.DisallowUnknownFields()
 	var h141 CallHierarchyOptions
 	if err := decoder141.Decode(&h141); err == nil {
 		t.Value = h141
 		return nil
 	}
 	decoder142 := json.NewDecoder(bytes.NewReader(x))
+	decoder142.DisallowUnknownFields()
 	var h142 CallHierarchyRegistrationOptions
 	if err := decoder142.Decode(&h142); err == nil {
 		t.Value = h142
@@ -1661,6 +1737,7 @@ func (t *Or_ServerCapabilities_codeActionProvider) UnmarshalJSON(x []byte) error
 		return nil
 	}
 	decoder110 := json.NewDecoder(bytes.NewReader(x))
+	decoder110.DisallowUnknownFields()
 	var h110 CodeActionOptions
 	if err := decoder110.Decode(&h110); err == nil {
 		t.Value = h110
@@ -1696,12 +1773,14 @@ func (t *Or_ServerCapabilities_colorProvider) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder114 := json.NewDecoder(bytes.NewReader(x))
+	decoder114.DisallowUnknownFields()
 	var h114 DocumentColorOptions
 	if err := decoder114.Decode(&h114); err == nil {
 		t.Value = h114
 		return nil
 	}
 	decoder115 := json.NewDecoder(bytes.NewReader(x))
+	decoder115.DisallowUnknownFields()
 	var h115 DocumentColorRegistrationOptions
 	if err := decoder115.Decode(&h115); err == nil {
 		t.Value = h115
@@ -1737,12 +1816,14 @@ func (t *Or_ServerCapabilities_declarationProvider) UnmarshalJSON(x []byte) erro
 		return nil
 	}
 	decoder84 := json.NewDecoder(bytes.NewReader(x))
+	decoder84.DisallowUnknownFields()
 	var h84 DeclarationOptions
 	if err := decoder84.Decode(&h84); err == nil {
 		t.Value = h84
 		return nil
 	}
 	decoder85 := json.NewDecoder(bytes.NewReader(x))
+	decoder85.DisallowUnknownFields()
 	var h85 DeclarationRegistrationOptions
 	if err := decoder85.Decode(&h85); err == nil {
 		t.Value = h85
@@ -1776,6 +1857,7 @@ func (t *Or_ServerCapabilities_definitionProvider) UnmarshalJSON(x []byte) error
 		return nil
 	}
 	decoder88 := json.NewDecoder(bytes.NewReader(x))
+	decoder88.DisallowUnknownFields()
 	var h88 DefinitionOptions
 	if err := decoder88.Decode(&h88); err == nil {
 		t.Value = h88
@@ -1802,12 +1884,14 @@ func (t *Or_ServerCapabilities_diagnosticProvider) UnmarshalJSON(x []byte) error
 		return nil
 	}
 	decoder174 := json.NewDecoder(bytes.NewReader(x))
+	decoder174.DisallowUnknownFields()
 	var h174 DiagnosticOptions
 	if err := decoder174.Decode(&h174); err == nil {
 		t.Value = h174
 		return nil
 	}
 	decoder175 := json.NewDecoder(bytes.NewReader(x))
+	decoder175.DisallowUnknownFields()
 	var h175 DiagnosticRegistrationOptions
 	if err := decoder175.Decode(&h175); err == nil {
 		t.Value = h175
@@ -1841,6 +1925,7 @@ func (t *Or_ServerCapabilities_documentFormattingProvider) UnmarshalJSON(x []byt
 		return nil
 	}
 	decoder121 := json.NewDecoder(bytes.NewReader(x))
+	decoder121.DisallowUnknownFields()
 	var h121 DocumentFormattingOptions
 	if err := decoder121.Decode(&h121); err == nil {
 		t.Value = h121
@@ -1874,6 +1959,7 @@ func (t *Or_ServerCapabilities_documentHighlightProvider) UnmarshalJSON(x []byte
 		return nil
 	}
 	decoder104 := json.NewDecoder(bytes.NewReader(x))
+	decoder104.DisallowUnknownFields()
 	var h104 DocumentHighlightOptions
 	if err := decoder104.Decode(&h104); err == nil {
 		t.Value = h104
@@ -1907,6 +1993,7 @@ func (t *Or_ServerCapabilities_documentRangeFormattingProvider) UnmarshalJSON(x 
 		return nil
 	}
 	decoder124 := json.NewDecoder(bytes.NewReader(x))
+	decoder124.DisallowUnknownFields()
 	var h124 DocumentRangeFormattingOptions
 	if err := decoder124.Decode(&h124); err == nil {
 		t.Value = h124
@@ -1940,6 +2027,7 @@ func (t *Or_ServerCapabilities_documentSymbolProvider) UnmarshalJSON(x []byte) e
 		return nil
 	}
 	decoder107 := json.NewDecoder(bytes.NewReader(x))
+	decoder107.DisallowUnknownFields()
 	var h107 DocumentSymbolOptions
 	if err := decoder107.Decode(&h107); err == nil {
 		t.Value = h107
@@ -1975,12 +2063,14 @@ func (t *Or_ServerCapabilities_foldingRangeProvider) UnmarshalJSON(x []byte) err
 		return nil
 	}
 	decoder131 := json.NewDecoder(bytes.NewReader(x))
+	decoder131.DisallowUnknownFields()
 	var h131 FoldingRangeOptions
 	if err := decoder131.Decode(&h131); err == nil {
 		t.Value = h131
 		return nil
 	}
 	decoder132 := json.NewDecoder(bytes.NewReader(x))
+	decoder132.DisallowUnknownFields()
 	var h132 FoldingRangeRegistrationOptions
 	if err := decoder132.Decode(&h132); err == nil {
 		t.Value = h132
@@ -2014,6 +2104,7 @@ func (t *Or_ServerCapabilities_hoverProvider) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder80 := json.NewDecoder(bytes.NewReader(x))
+	decoder80.DisallowUnknownFields()
 	var h80 HoverOptions
 	if err := decoder80.Decode(&h80); err == nil {
 		t.Value = h80
@@ -2049,12 +2140,14 @@ func (t *Or_ServerCapabilities_implementationProvider) UnmarshalJSON(x []byte) e
 		return nil
 	}
 	decoder97 := json.NewDecoder(bytes.NewReader(x))
+	decoder97.DisallowUnknownFields()
 	var h97 ImplementationOptions
 	if err := decoder97.Decode(&h97); err == nil {
 		t.Value = h97
 		return nil
 	}
 	decoder98 := json.NewDecoder(bytes.NewReader(x))
+	decoder98.DisallowUnknownFields()
 	var h98 ImplementationRegistrationOptions
 	if err := decoder98.Decode(&h98); err == nil {
 		t.Value = h98
@@ -2090,12 +2183,14 @@ func (t *Or_ServerCapabilities_inlayHintProvider) UnmarshalJSON(x []byte) error 
 		return nil
 	}
 	decoder170 := json.NewDecoder(bytes.NewReader(x))
+	decoder170.DisallowUnknownFields()
 	var h170 InlayHintOptions
 	if err := decoder170.Decode(&h170); err == nil {
 		t.Value = h170
 		return nil
 	}
 	decoder171 := json.NewDecoder(bytes.NewReader(x))
+	decoder171.DisallowUnknownFields()
 	var h171 InlayHintRegistrationOptions
 	if err := decoder171.Decode(&h171); err == nil {
 		t.Value = h171
@@ -2129,6 +2224,7 @@ func (t *Or_ServerCapabilities_inlineCompletionProvider) UnmarshalJSON(x []byte)
 		return nil
 	}
 	decoder178 := json.NewDecoder(bytes.NewReader(x))
+	decoder178.DisallowUnknownFields()
 	var h178 InlineCompletionOptions
 	if err := decoder178.Decode(&h178); err == nil {
 		t.Value = h178
@@ -2164,12 +2260,14 @@ func (t *Or_ServerCapabilities_inlineValueProvider) UnmarshalJSON(x []byte) erro
 		return nil
 	}
 	decoder165 := json.NewDecoder(bytes.NewReader(x))
+	decoder165.DisallowUnknownFields()
 	var h165 InlineValueOptions
 	if err := decoder165.Decode(&h165); err == nil {
 		t.Value = h165
 		return nil
 	}
 	decoder166 := json.NewDecoder(bytes.NewReader(x))
+	decoder166.DisallowUnknownFields()
 	var h166 InlineValueRegistrationOptions
 	if err := decoder166.Decode(&h166); err == nil {
 		t.Value = h166
@@ -2205,12 +2303,14 @@ func (t *Or_ServerCapabilities_linkedEditingRangeProvider) UnmarshalJSON(x []byt
 		return nil
 	}
 	decoder146 := json.NewDecoder(bytes.NewReader(x))
+	decoder146.DisallowUnknownFields()
 	var h146 LinkedEditingRangeOptions
 	if err := decoder146.Decode(&h146); err == nil {
 		t.Value = h146
 		return nil
 	}
 	decoder147 := json.NewDecoder(bytes.NewReader(x))
+	decoder147.DisallowUnknownFields()
 	var h147 LinkedEditingRangeRegistrationOptions
 	if err := decoder147.Decode(&h147); err == nil {
 		t.Value = h147
@@ -2246,12 +2346,14 @@ func (t *Or_ServerCapabilities_monikerProvider) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder155 := json.NewDecoder(bytes.NewReader(x))
+	decoder155.DisallowUnknownFields()
 	var h155 MonikerOptions
 	if err := decoder155.Decode(&h155); err == nil {
 		t.Value = h155
 		return nil
 	}
 	decoder156 := json.NewDecoder(bytes.NewReader(x))
+	decoder156.DisallowUnknownFields()
 	var h156 MonikerRegistrationOptions
 	if err := decoder156.Decode(&h156); err == nil {
 		t.Value = h156
@@ -2278,12 +2380,14 @@ func (t *Or_ServerCapabilities_notebookDocumentSync) UnmarshalJSON(x []byte) err
 		return nil
 	}
 	decoder76 := json.NewDecoder(bytes.NewReader(x))
+	decoder76.DisallowUnknownFields()
 	var h76 NotebookDocumentSyncOptions
 	if err := decoder76.Decode(&h76); err == nil {
 		t.Value = h76
 		return nil
 	}
 	decoder77 := json.NewDecoder(bytes.NewReader(x))
+	decoder77.DisallowUnknownFields()
 	var h77 NotebookDocumentSyncRegistrationOptions
 	if err := decoder77.Decode(&h77); err == nil {
 		t.Value = h77
@@ -2317,6 +2421,7 @@ func (t *Or_ServerCapabilities_referencesProvider) UnmarshalJSON(x []byte) error
 		return nil
 	}
 	decoder101 := json.NewDecoder(bytes.NewReader(x))
+	decoder101.DisallowUnknownFields()
 	var h101 ReferenceOptions
 	if err := decoder101.Decode(&h101); err == nil {
 		t.Value = h101
@@ -2350,6 +2455,7 @@ func (t *Or_ServerCapabilities_renameProvider) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder127 := json.NewDecoder(bytes.NewReader(x))
+	decoder127.DisallowUnknownFields()
 	var h127 RenameOptions
 	if err := decoder127.Decode(&h127); err == nil {
 		t.Value = h127
@@ -2385,12 +2491,14 @@ func (t *Or_ServerCapabilities_selectionRangeProvider) UnmarshalJSON(x []byte) e
 		return nil
 	}
 	decoder136 := json.NewDecoder(bytes.NewReader(x))
+	decoder136.DisallowUnknownFields()
 	var h136 SelectionRangeOptions
 	if err := decoder136.Decode(&h136); err == nil {
 		t.Value = h136
 		return nil
 	}
 	decoder137 := json.NewDecoder(bytes.NewReader(x))
+	decoder137.DisallowUnknownFields()
 	var h137 SelectionRangeRegistrationOptions
 	if err := decoder137.Decode(&h137); err == nil {
 		t.Value = h137
@@ -2417,12 +2525,14 @@ func (t *Or_ServerCapabilities_semanticTokensProvider) UnmarshalJSON(x []byte) e
 		return nil
 	}
 	decoder150 := json.NewDecoder(bytes.NewReader(x))
+	decoder150.DisallowUnknownFields()
 	var h150 SemanticTokensOptions
 	if err := decoder150.Decode(&h150); err == nil {
 		t.Value = h150
 		return nil
 	}
 	decoder151 := json.NewDecoder(bytes.NewReader(x))
+	decoder151.DisallowUnknownFields()
 	var h151 SemanticTokensRegistrationOptions
 	if err := decoder151.Decode(&h151); err == nil {
 		t.Value = h151
@@ -2449,12 +2559,14 @@ func (t *Or_ServerCapabilities_textDocumentSync) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder72 := json.NewDecoder(bytes.NewReader(x))
+	decoder72.DisallowUnknownFields()
 	var h72 TextDocumentSyncKind
 	if err := decoder72.Decode(&h72); err == nil {
 		t.Value = h72
 		return nil
 	}
 	decoder73 := json.NewDecoder(bytes.NewReader(x))
+	decoder73.DisallowUnknownFields()
 	var h73 TextDocumentSyncOptions
 	if err := decoder73.Decode(&h73); err == nil {
 		t.Value = h73
@@ -2490,12 +2602,14 @@ func (t *Or_ServerCapabilities_typeDefinitionProvider) UnmarshalJSON(x []byte) e
 		return nil
 	}
 	decoder92 := json.NewDecoder(bytes.NewReader(x))
+	decoder92.DisallowUnknownFields()
 	var h92 TypeDefinitionOptions
 	if err := decoder92.Decode(&h92); err == nil {
 		t.Value = h92
 		return nil
 	}
 	decoder93 := json.NewDecoder(bytes.NewReader(x))
+	decoder93.DisallowUnknownFields()
 	var h93 TypeDefinitionRegistrationOptions
 	if err := decoder93.Decode(&h93); err == nil {
 		t.Value = h93
@@ -2531,12 +2645,14 @@ func (t *Or_ServerCapabilities_typeHierarchyProvider) UnmarshalJSON(x []byte) er
 		return nil
 	}
 	decoder160 := json.NewDecoder(bytes.NewReader(x))
+	decoder160.DisallowUnknownFields()
 	var h160 TypeHierarchyOptions
 	if err := decoder160.Decode(&h160); err == nil {
 		t.Value = h160
 		return nil
 	}
 	decoder161 := json.NewDecoder(bytes.NewReader(x))
+	decoder161.DisallowUnknownFields()
 	var h161 TypeHierarchyRegistrationOptions
 	if err := decoder161.Decode(&h161); err == nil {
 		t.Value = h161
@@ -2570,6 +2686,7 @@ func (t *Or_ServerCapabilities_workspaceSymbolProvider) UnmarshalJSON(x []byte) 
 		return nil
 	}
 	decoder118 := json.NewDecoder(bytes.NewReader(x))
+	decoder118.DisallowUnknownFields()
 	var h118 WorkspaceSymbolOptions
 	if err := decoder118.Decode(&h118); err == nil {
 		t.Value = h118
@@ -2603,6 +2720,7 @@ func (t *Or_SignatureInformation_documentation) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder187 := json.NewDecoder(bytes.NewReader(x))
+	decoder187.DisallowUnknownFields()
 	var h187 MarkupContent
 	if err := decoder187.Decode(&h187); err == nil {
 		t.Value = h187
@@ -2629,12 +2747,14 @@ func (t *Or_TextDocumentContentChangeEvent) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder263 := json.NewDecoder(bytes.NewReader(x))
+	decoder263.DisallowUnknownFields()
 	var h263 TextDocumentContentChangePartial
 	if err := decoder263.Decode(&h263); err == nil {
 		t.Value = h263
 		return nil
 	}
 	decoder264 := json.NewDecoder(bytes.NewReader(x))
+	decoder264.DisallowUnknownFields()
 	var h264 TextDocumentContentChangeWholeDocument
 	if err := decoder264.Decode(&h264); err == nil {
 		t.Value = h264
@@ -2663,18 +2783,21 @@ func (t *Or_TextDocumentEdit_edits_Elem) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder52 := json.NewDecoder(bytes.NewReader(x))
+	decoder52.DisallowUnknownFields()
 	var h52 AnnotatedTextEdit
 	if err := decoder52.Decode(&h52); err == nil {
 		t.Value = h52
 		return nil
 	}
 	decoder53 := json.NewDecoder(bytes.NewReader(x))
+	decoder53.DisallowUnknownFields()
 	var h53 SnippetTextEdit
 	if err := decoder53.Decode(&h53); err == nil {
 		t.Value = h53
 		return nil
 	}
 	decoder54 := json.NewDecoder(bytes.NewReader(x))
+	decoder54.DisallowUnknownFields()
 	var h54 TextEdit
 	if err := decoder54.Decode(&h54); err == nil {
 		t.Value = h54
@@ -2703,18 +2826,21 @@ func (t *Or_TextDocumentFilter) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder279 := json.NewDecoder(bytes.NewReader(x))
+	decoder279.DisallowUnknownFields()
 	var h279 TextDocumentFilterLanguage
 	if err := decoder279.Decode(&h279); err == nil {
 		t.Value = h279
 		return nil
 	}
 	decoder280 := json.NewDecoder(bytes.NewReader(x))
+	decoder280.DisallowUnknownFields()
 	var h280 TextDocumentFilterPattern
 	if err := decoder280.Decode(&h280); err == nil {
 		t.Value = h280
 		return nil
 	}
 	decoder281 := json.NewDecoder(bytes.NewReader(x))
+	decoder281.DisallowUnknownFields()
 	var h281 TextDocumentFilterScheme
 	if err := decoder281.Decode(&h281); err == nil {
 		t.Value = h281
@@ -2748,6 +2874,7 @@ func (t *Or_TextDocumentSyncOptions_save) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder196 := json.NewDecoder(bytes.NewReader(x))
+	decoder196.DisallowUnknownFields()
 	var h196 SaveOptions
 	if err := decoder196.Decode(&h196); err == nil {
 		t.Value = h196
@@ -2774,12 +2901,14 @@ func (t *Or_WorkspaceDocumentDiagnosticReport) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder259 := json.NewDecoder(bytes.NewReader(x))
+	decoder259.DisallowUnknownFields()
 	var h259 WorkspaceFullDocumentDiagnosticReport
 	if err := decoder259.Decode(&h259); err == nil {
 		t.Value = h259
 		return nil
 	}
 	decoder260 := json.NewDecoder(bytes.NewReader(x))
+	decoder260.DisallowUnknownFields()
 	var h260 WorkspaceUnchangedDocumentDiagnosticReport
 	if err := decoder260.Decode(&h260); err == nil {
 		t.Value = h260
@@ -2810,24 +2939,28 @@ func (t *Or_WorkspaceEdit_documentChanges_Elem) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder4 := json.NewDecoder(bytes.NewReader(x))
+	decoder4.DisallowUnknownFields()
 	var h4 CreateFile
 	if err := decoder4.Decode(&h4); err == nil {
 		t.Value = h4
 		return nil
 	}
 	decoder5 := json.NewDecoder(bytes.NewReader(x))
+	decoder5.DisallowUnknownFields()
 	var h5 DeleteFile
 	if err := decoder5.Decode(&h5); err == nil {
 		t.Value = h5
 		return nil
 	}
 	decoder6 := json.NewDecoder(bytes.NewReader(x))
+	decoder6.DisallowUnknownFields()
 	var h6 RenameFile
 	if err := decoder6.Decode(&h6); err == nil {
 		t.Value = h6
 		return nil
 	}
 	decoder7 := json.NewDecoder(bytes.NewReader(x))
+	decoder7.DisallowUnknownFields()
 	var h7 TextDocumentEdit
 	if err := decoder7.Decode(&h7); err == nil {
 		t.Value = h7
@@ -2888,12 +3021,14 @@ func (t *Or_WorkspaceOptions_textDocumentContent) UnmarshalJSON(x []byte) error 
 		return nil
 	}
 	decoder199 := json.NewDecoder(bytes.NewReader(x))
+	decoder199.DisallowUnknownFields()
 	var h199 TextDocumentContentOptions
 	if err := decoder199.Decode(&h199); err == nil {
 		t.Value = h199
 		return nil
 	}
 	decoder200 := json.NewDecoder(bytes.NewReader(x))
+	decoder200.DisallowUnknownFields()
 	var h200 TextDocumentContentRegistrationOptions
 	if err := decoder200.Decode(&h200); err == nil {
 		t.Value = h200
@@ -2920,12 +3055,14 @@ func (t *Or_WorkspaceSymbol_location) UnmarshalJSON(x []byte) error {
 		return nil
 	}
 	decoder39 := json.NewDecoder(bytes.NewReader(x))
+	decoder39.DisallowUnknownFields()
 	var h39 Location
 	if err := decoder39.Decode(&h39); err == nil {
 		t.Value = h39
 		return nil
 	}
 	decoder40 := json.NewDecoder(bytes.NewReader(x))
+	decoder40.DisallowUnknownFields()
 	var h40 LocationUriOnly
 	if err := decoder40.Decode(&h40); err == nil {
 		t.Value = h40

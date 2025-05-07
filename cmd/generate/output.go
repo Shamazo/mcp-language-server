@@ -461,6 +461,7 @@ func genMarshal() {
 				continue
 			default:
 				fmt.Fprintf(&buf, "\tdecoder%d := json.NewDecoder(bytes.NewReader(x))\n", decoderIndex)
+				fmt.Fprintf(&buf, "\tdecoder%d.DisallowUnknownFields()\n", decoderIndex)
 				fmt.Fprintf(&buf, "\tvar h%d %s\n", decoderIndex, nmx)
 				fmt.Fprintf(&buf, "\tif err := decoder%d.Decode(&h%d); err == nil {\n\t\tt.Value = h%d\n\t\treturn nil\n\t}\n", decoderIndex, decoderIndex, decoderIndex)
 			}
