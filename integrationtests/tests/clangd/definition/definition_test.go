@@ -34,7 +34,8 @@ func TestReadDefinition(t *testing.T) {
 				t.Logf("Note: Failed to open %s: %v", file, err)
 			}
 		}
-		time.Sleep(5 * time.Second)
+		// Wait for indexing to complete. clangd won't index files until they are opened.
+		time.Sleep(10 * time.Second)
 	}
 
 	suite := internal.GetTestSuite(t)
