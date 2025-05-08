@@ -46,4 +46,3 @@ At: L4:C36, L24:C12
 24|    let t: SharedType = String::from("test");
 25|    println!("Type: {}", t);
 26|}
-27|
